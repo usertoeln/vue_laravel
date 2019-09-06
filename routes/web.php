@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+use Illuminate\Support\Facades\Route;
+
+Route::get('/','AdminPanelController@index');
